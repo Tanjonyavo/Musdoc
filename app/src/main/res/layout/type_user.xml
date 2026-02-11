@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/user_background"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/SubtitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom :" />
+
+
+        <TextView
+            android:id="@+id/score_name"
+            style="@style/SubtitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/score_depre"
+            style="@style/SubtitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dépréssion :"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/score_anx" />
+
+        <TextView
+            android:id="@+id/score_anx"
+            style="@style/SubtitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anxiété :"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/niv_anxiete"
+            style="@style/SubtitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintStart_toEndOf="@+id/score_anx"
+            app:layout_constraintTop_toBottomOf="@+id/score_name"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/niv_depre"
+            style="@style/SubtitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.365"
+            app:layout_constraintStart_toEndOf="@+id/score_depre"
+            app:layout_constraintTop_toBottomOf="@+id/niv_anxiete"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnSupprimer"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_vertical"
+        android:text="Supprimer"
+        app:layout_constraintBottom_toBottomOf="@+id/btnModifier"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/btnModifier"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_vertical"
+        android:text="Modifier le nom"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="116dp" />
+    </LinearLayout>
+</LinearLayout>

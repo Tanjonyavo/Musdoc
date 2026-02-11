@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Musdoc</string>
+
+    <!-- Bottom navigation / titles -->
+    <string name="title_discover">À découvrir</string>
+    <string name="title_list">Liste</string>
+    <string name="title_favorites">Favoris</string>
+
+    <!-- Common -->
+    <string name="confirm_exit_message">Voulez-vous réellement quitter ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="tap_again_to_exit">Recliquez pour quitter</string>
+    <string name="fill_all_fields">Veuillez remplir tous les champs</string>
+    <string name="about_title">À propos</string>
+    <string name="about_body">Musdoc est une application de musicothérapie visant à soutenir la relaxation et le bien-être.
+
+Version 1.0</string>
+    <string name="credits_title">Crédits</string>
+    <string name="credits_body">Développement : Musdoc Team
+Icônes : Material / ressources internes
+Audio : ressources intégrées</string>
+    <string name="menu_me">Profil</string>
+    <string name="menu_tools">Tests &amp; outils</string>
+    <string name="menu_about">À propos</string>
+    <string name="menu_credits">Crédits</string>
+    <string name="menu_logout">Quitter</string>
+</resources>

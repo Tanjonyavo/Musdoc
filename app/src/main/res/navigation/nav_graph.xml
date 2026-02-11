@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_page">
+
+    <!-- IDs align with res/menu/bottom_navigation_menu.xml item IDs -->
+    <fragment
+        android:id="@+id/home_page"
+        android:name="mg.ispm.musdoc.fragments.HomeFragment"
+        android:label="@string/title_discover">
+        <action
+            android:id="@+id/action_home_to_list_filtered"
+            app:destination="@id/list_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/list_page"
+        android:name="mg.ispm.musdoc.fragments.ListFragment"
+        android:label="@string/title_list">
+        <argument
+            android:name="data"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favorite_page"
+        android:name="mg.ispm.musdoc.fragments.FavoriteFragment"
+        android:label="@string/title_favorites" />
+
+</navigation>

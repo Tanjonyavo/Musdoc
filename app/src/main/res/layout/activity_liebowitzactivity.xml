@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#85E85E"
+    tools:context=".LiebowitzActivity">
+
+
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Question"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ANXIETE"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Anx1"
+                android:layout_width="140dp"
+                style="@style/SubtitleTextStyle"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/question_option"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Aucune"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Anx2"
+                android:layout_width="140dp"
+                style="@style/SubtitleTextStyle"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/question_option"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Légère"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Anx3"
+                style="@style/SubtitleTextStyle"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/question_option"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Moyenne"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Anx4"
+                style="@style/SubtitleTextStyle"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/question_option"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Sévère"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="EVITEMENT"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Evit1"
+                style="@style/SubtitleTextStyle"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/question_option"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Jamais"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Evit2"
+                style="@style/SubtitleTextStyle"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/question_option"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Occasionnel"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Evit3"
+                style="@style/SubtitleTextStyle"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/question_option"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Fréquent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Evit4"
+                style="@style/SubtitleTextStyle"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/question_option"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Habituel"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id ="@+id/valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Valider"
+        android:background="@color/lightGray"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FDBD00"
+    tools:context=".BDIActivity">
+
+
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Question"
+        android:textColor="@color/darkGray"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Déppression"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/depre1"
+        android:layout_width="match_parent"
+        style="@style/SubtitleTextStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/question_option"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Aucune"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/depre2"
+        android:layout_width="match_parent"
+        style="@style/SubtitleTextStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/question_option"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Légère"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/depre3"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/question_option"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Moyenne"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/depre4"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/question_option"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Sévère"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:id ="@+id/valider1"
+        android:background="@color/lightGray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Valider"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</LinearLayout>
