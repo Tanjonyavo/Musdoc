@@ -1,26 +1,67 @@
-# Musdoc
+# Musdoc — Android Music Therapy App
 
-Application Android (Kotlin) de musicothérapie.
+Musdoc is an Android application designed to support emotional well-being through music therapy.  
+Users can explore curated music by emotional state, play audio tracks, and manage favorites in a simple and focused interface.
+
+This project was built as a student project to demonstrate Android fundamentals, Kotlin development, and basic mobile architecture.
+
+---
 
 ## Features
-- Parcours émotionnel (stress, anxiété, dépression…)
-- Lecteur audio intégré
-- Favoris
-- Catalogue musical local
 
-## Stack
+- Emotional categories (stress, anxiety, depression, etc.)
+- Built-in audio player
+- Favorite tracks system
+- Local music catalog
+- Multi-screen navigation
+- Simple user flow
+
+---
+
+## Screenshots
+
+Create a folder at the root of the project:
+
+/screenshots
+
+Add at least these 4 images:
+
+- screenshots/home.png → Emotion selection screen  
+- screenshots/list.png → Music list screen  
+- screenshots/player.png → Audio player screen  
+- screenshots/favorites.png → Favorites screen  
+
+Display them like this:
+
+<p float="left">
+  <img src="screenshots/home.png" width="200"/>
+  <img src="screenshots/list.png" width="200"/>
+  <img src="screenshots/player.png" width="200"/>
+  <img src="screenshots/favorites.png" width="200"/>
+</p>
+
+---
+
+## Tech Stack
+
 - Kotlin
+- Android SDK
 - ViewBinding
-- MVVM light
+- MVVM (light architecture)
 - SQLite
+- MediaPlayer API
+- Gradle
 
-## Build
+---
+
+## Getting Started
+
+### Requirements
+
+- Android Studio
+- JDK 11 or higher
+
+### Build
 
 ```bash
 ./gradlew assembleDebug
-```
-
-Ouvrir aussi directement avec Android Studio.
-
-## Notes
-Projet étudiant  (gestion MediaPlayer, wrapper, gitignore).
