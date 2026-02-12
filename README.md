@@ -1,4 +1,5 @@
 # Musdoc — Android Music Therapy App
+<<<<<<< HEAD
 
 Musdoc is an Android application designed to support emotional well-being through music therapy.  
 Users can explore curated music by emotional state, play audio tracks, and manage favorites in a simple and focused interface.
@@ -7,6 +8,15 @@ This project was built as a student project to demonstrate Android fundamentals,
 
 ---
 
+=======
+
+Musdoc is an Android application designed to support emotional well-being through music therapy.  
+Users can explore curated music by emotional state, play audio tracks, and manage favorites in a simple and focused interface.
+
+This project was built as a student project to demonstrate Android fundamentals, Kotlin development, and basic mobile architecture.
+
+---
+>>>>>>> 562c800 (Remove build artifacts and add .gitignore)
 
 ## Features
 
@@ -21,7 +31,22 @@ This project was built as a student project to demonstrate Android fundamentals,
 
 ## Screenshots
 
+<<<<<<< HEAD
 
+=======
+Create a folder at the root of the project:
+
+/screenshots
+
+Add at least these 4 images:
+
+- screenshots/home.png → Emotion selection screen  
+- screenshots/list.png → Music list screen  
+- screenshots/player.png → Audio player screen  
+- screenshots/favorites.png → Favorites screen  
+
+Display them like this:
+>>>>>>> 562c800 (Remove build artifacts and add .gitignore)
 
 <p float="left">
   <img src="screenshots/home.jpg" width="200"/>
@@ -54,6 +79,7 @@ This project was built as a student project to demonstrate Android fundamentals,
 ### Build
 
 ```bash
+<<<<<<< HEAD
 ./gradlew assembleDebug
 </p>
 
@@ -82,3 +108,6 @@ This project was built as a student project to demonstrate Android fundamentals,
 
 ```bash
 ./gradlew assembleDebug
+=======
+./gradlew assembleDebug
+>>>>>>> 562c800 (Remove build artifacts and add .gitignore)
