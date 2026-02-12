@@ -32,6 +32,78 @@ This project was built as a student project to demonstrate Android fundamentals,
 
 ---
 
+Validation & Testing Strategy
+
+Framework: JUnit 5
+Build tool: Maven
+Run tests:
+
+mvn test
+
+Total test coverage includes validation of:
+
+Core Game Logic
+
+Move initialization correctness
+
+Capture detection during move execution
+
+Move without capture validation
+
+Position repetition detection (3-fold repetition tracking)
+
+Piece coordinate handling and state integrity
+
+Check detection:
+
+King in check by Rook
+
+King in check by Pawn
+
+King not in check
+
+UI Logic
+
+Game cadence selection (Blitz / Rapid / Classical)
+
+Proper configuration of game time
+
+Clock decrement logic
+
+Clock stop at zero
+
+Proper formatting of timer display
+
+Game over window rendering and message validation
+
+Stability Tests
+
+Music player initialization without runtime exceptions
+
+Example of Validated Rules
+Rule / Behavior	Test Type	Status
+Move coordinate assignment	Unit	✔
+Capture detection	Unit	✔
+Non-capture move	Unit	✔
+Repetition counter	Unit	✔
+King in check detection	Logic	✔
+Clock decrement	Unit	✔
+Clock stop at 0	Unit	✔
+Cadence configuration (UI interaction)	Functional	✔
+Key Technical Features
+
+Rule-based move validation
+
+Board state management
+
+Check detection engine
+
+Game timer system
+
+Modular piece hierarchy
+
+Automated validation tests
+
 ## Tech Stack
 
 - Kotlin
