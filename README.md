@@ -56,18 +56,7 @@ This project was built as a student project to demonstrate Android fundamentals,
 
 ## Screenshots
 
-Create a folder at the root of the project:
 
-/screenshots
-
-Add at least these 4 images:
-
-- screenshots/home.png → Emotion selection screen  
-- screenshots/list.png → Music list screen  
-- screenshots/player.png → Audio player screen  
-- screenshots/favorites.png → Favorites screen  
-
-Display them like this:
 
 <p float="left">
   <img src="screenshots/home.jpg" width="200"/>
