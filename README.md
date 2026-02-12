@@ -45,11 +45,24 @@ This separation improves maintainability, testability, and scalability.
 
 ## Screenshots
 
-<p float="left">
-  <img src="screenshots/home.jpg" width="200"/>
-  <img src="screenshots/list.jpg" width="200"/>
-  <img src="screenshots/player.jpg" width="200"/>
-  <img src="screenshots/favorites.jpg" width="200"/>
+<p><b>Home screen</b></p>
+<p align="center">
+  <img src="screenshots/home.jpg" width="600" style="border-radius:10px;">
+</p>
+
+<p><b>Music list screen</b></p>
+<p align="center">
+  <img src="screenshots/list.jpg" width="600" style="border-radius:10px;">
+</p>
+
+<p><b>Player screen</b></p>
+<p align="center">
+  <img src="screenshots/player.jpg" width="600" style="border-radius:10px;">
+</p>
+
+<p><b>Favorites screen</b></p>
+<p align="center">
+  <img src="screenshots/favorites.jpg" width="600" style="border-radius:10px;">
 </p>
 
 ---
