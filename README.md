@@ -47,22 +47,22 @@ This separation improves maintainability, testability, and scalability.
 
 <p><b>Home screen</b></p>
 <p align="center">
-  <img src="screenshots/home.jpg" width="600" style="border-radius:10px;">
+  <img src="screenshots/home.jpg" width="400" style="border-radius:10px;">
 </p>
 
 <p><b>Music list screen</b></p>
 <p align="center">
-  <img src="screenshots/list.jpg" width="600" style="border-radius:10px;">
+  <img src="screenshots/list.jpg" width="400" style="border-radius:10px;">
 </p>
 
 <p><b>Player screen</b></p>
 <p align="center">
-  <img src="screenshots/player.jpg" width="600" style="border-radius:10px;">
+  <img src="screenshots/player.jpg" width="400" style="border-radius:10px;">
 </p>
 
 <p><b>Favorites screen</b></p>
 <p align="center">
-  <img src="screenshots/favorites.jpg" width="600" style="border-radius:10px;">
+  <img src="screenshots/favorites.jpg" width="400" style="border-radius:10px;">
 </p>
 
 ---
