@@ -1,106 +1,142 @@
 # Musdoc — Android Music Therapy App
 
-Musdoc is a native Android application built with Kotlin that helps users track emotions and listen to curated music playlists to support emotional well-being.
+Musdoc is a native Android app built with Kotlin to support music therapy sessions.  
+It was developed in collaboration with a music therapist, whose professional feedback  
+drove a full architectural refactoring from a flat structure to MVVM.
 
-This project demonstrates core Android development concepts including MVVM architecture, local persistence with SQLite, UI navigation, and media playback.
-
-The application APK is available in the **Releases** section of this repository.
-
----
-
-## Features
-
-- Emotion selection with local persistence (SQLite)
-- Music playback using Android MediaPlayer
-- ViewModel-based UI state management (MVVM)
-- Multi-screen navigation
-- Simple and intuitive user interface
-- Local user history tracking
-
----
-
-## Tech Stack
-
-- Kotlin  
-- Android SDK  
-- SQLite  
-- MVVM Architecture  
-- ViewModel  
-- MediaPlayer API  
-- Gradle  
-
----
-
-## Architecture Overview
-
-The project follows the MVVM (Model–View–ViewModel) pattern:
-ui/ – Activities and UI components
-viewmodel/ – Business logic and UI state management
-data/ – SQLite database access and repositories
-model/ – Domain models
-
-This separation improves maintainability, testability, and scalability.
+**[⬇ Download APK](https://github.com/Tanjonyavo/Musdoc/releases/latest)**  
+Requires Android 8.0 (API 26) or higher.
 
 ---
 
 ## Screenshots
 
-<p><b>Home screen</b></p>
-<p align="center">
-  <img src="screenshots/home.jpg" width="400" style="border-radius:10px;">
-</p>
-
-<p><b>Music list screen</b></p>
-<p align="center">
-  <img src="screenshots/list.jpg" width="400" style="border-radius:10px;">
-</p>
-
-<p><b>Player screen</b></p>
-<p align="center">
-  <img src="screenshots/player.jpg" width="400" style="border-radius:10px;">
-</p>
-
-<p><b>Favorites screen</b></p>
-<p align="center">
-  <img src="screenshots/favorites.jpg" width="400" style="border-radius:10px;">
-</p>
+| Home | Music list | Player | Favourites |
+|------|-----------|--------|------------|
+| ![Home](screenshots/home.jpg) | ![List](screenshots/list.jpg) | ![Player](screenshots/player.jpg) | ![Favourites](screenshots/favorites.jpg) |
 
 ---
 
-# Getting Started
+## Features
 
-### Requirements
-
-- Android Studio
-- JDK 11+
-
-### Run Locally
-
-1. Clone the repository
-2. Open the project in Android Studio
-3. Sync Gradle
-4. Run on emulator or physical device
+- Emotion-based music selection with local persistence
+- Audio playback via Android `MediaPlayer`
+- Favourites management with instant toggle
+- Full session history stored locally (SQLite)
+- Multi-screen navigation with back-stack handling
+- ViewModel-driven UI state — no logic in Activities
 
 ---
 
-## APK Download
+## Architecture
 
-A ready-to-install APK is available in the **Releases** section of this repository.
+The project follows the **MVVM** pattern with a clear package separation:
+```
+app/src/main/java/
+├── ui/          — Activities and UI components (View layer)
+├── viewmodel/   — Business logic and UI state (ViewModel)
+├── data/        — SQLite helpers and repositories (Model layer)
+└── model/       — Domain entities
+```
 
----
-
-## Personal Contribution
-
-This project was fully developed by me, including:
-
-- UI design and navigation
-- MVVM implementation
-- SQLite persistence
-- Music playback integration
-- Application logic
+The ViewModel layer holds all state and survives configuration changes.  
+Activities observe LiveData and contain no business logic.
 
 ---
 
-## Purpose
+## Tech Stack
 
-This application was built as an academic and personal project to strengthen Android development skills, software architecture understanding, and mobile application design.
+| Layer | Technology |
+|-------|-----------|
+| Language | Kotlin |
+| Architecture | MVVM |
+| Persistence | SQLite (Android `SQLiteOpenHelper`) |
+| UI state | ViewModel + LiveData |
+| Media | Android `MediaPlayer` API |
+| Build | Gradle |
+
+---
+
+## Getting Started
+
+**Requirements:** Android Studio · JDK 11+
+```bash
+git clone https://github.com/Tanjonyavo/Musdoc.git
+```
+
+1. Open the project in Android Studio
+2. Sync Gradle
+3. Run on an emulator or a physical device (API 26+)
+
+Alternatively, install the APK directly from the [Releases](https://github.com/Tanjonyavo/Musdoc/releases/latest) page.
+
+---
+
+## Licence
+
+[MIT](LICENSE)
+```
+
+**Pourquoi :** Supprime les deux sections qui coulaient le projet. Réoriente le pitch sur le vrai différenciateur (feedback musicothérapeute → refactorisation). Ajoute un tableau Tech Stack lisible en 5 secondes. Met le lien de téléchargement immédiatement visible.
+
+---
+
+### Notes de release Musdoc — `v1.0`
+
+**Titre :** `Musdoc v1.0`
+
+**Corps :**
+```
+## What's included
+
+- Emotion-based music selection
+- Audio playback (Android MediaPlayer)
+- Favourites with local persistence (SQLite)
+- Session history tracking
+- MVVM architecture — full ViewModel/LiveData implementation
+
+## Installation
+
+1. Download `Musdoc.apk` below
+2. On your Android device: Settings → Security → Allow installation from unknown sources
+3. Open the downloaded file and install
+
+**Requires Android 8.0 (API 26) or higher.**
+```
+
+**Pourquoi :** "Debug APK for testing purposes" est remplacé par des instructions d'installation claires. Le mot "debug" disparaît. La version s'appelle `v1.0`, pas `v1.0 (debug)`.
+
+---
+
+### Notes de release ChessGame — `v1.0`
+
+**Titre :** `ChessGame v1.0`
+
+**Corps :**
+```
+## What's included
+
+Full two-player chess engine with:
+- Legal move validation for all 6 piece types
+- Castling (kingside and queenside)
+- En passant capture
+- Pawn promotion
+- Check, checkmate, and stalemate detection
+- Threefold repetition tracking
+- Game timer: Blitz / Rapid / Classic modes
+
+## Installation
+
+1. Download `ChessGame.exe` below
+2. Run the executable — **Java 11 or higher is required**
+
+> **Note:** Windows SmartScreen may display a warning on first launch because the
+> executable is unsigned. Click "More info" → "Run anyway" to proceed.
+> This is expected for self-distributed Java applications.
+
+## Running from source
+```bash
+git clone https://github.com/Tanjonyavo/ChessGame.git
+cd ChessGame
+mvn package
+```
